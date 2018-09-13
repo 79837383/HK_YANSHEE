@@ -19,6 +19,9 @@ if (0!= ret):
     exit(1)
 
 #---------------------------Read Sensor Value---------------------------
+res = RobotApi.ubtSearchExtendSensor()
+print res
+
 press_sensor=RobotApi.UBTEDU_ROBOTPRESSURE_SENSOR_T() 
 while True:
     time.sleep(2) 

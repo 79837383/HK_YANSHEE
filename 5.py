@@ -11,21 +11,24 @@ robotinfo=RobotApi.UBTEDU_ROBOTINFO_T()
 robotinfo.acName="Yanshee_438F" 
 ret=RobotApi.ubtRobotDiscovery("SDK", 15, robotinfo)
 if (0!= ret):
-		print ("Return value: %d"% ret)
-		exit(1)
+	print ("Return value: %d"% ret)
+	exit(1)
 gIPAddr=robotinfo.acIPAddr 
 ret=RobotApi.ubtRobotConnect("SDK", "1", gIPAddr)
 if (0!= ret):
-		print ("Can not connect to robot %s"%robotinfo.acName) 
-		exit(1)
+	print ("Can not connect to robot %s"%robotinfo.acName)
+	exit(1)
 #---------------------------Read Sensor Value-------------------------
+res = RobotApi.ubtSearchExtendSensor()
+print res
+
 infrared_sensor=RobotApi.UBTEDU_ROBOTINFRARED_SENSOR_T() 
 while True:
-		time.sleep(2) 
-		ret=RobotApi.ubtReadSensorValue("infrared",infrared_sensor,4)
-if ret !=0:
+	time.sleep(2)
+	ret=RobotApi.ubtReadSensorValue("infrared",infrared_sensor,4)#infrared
+	if ret !=0:
 		print("Can not read Sensor value. Error code: %d"% (ret))
-else:
+	else:
 		print("Read Infrared Sensor Value: %d mm"% (infrared_sensor.iValue))
 #---------------------------Disconnect---------------------------------
 RobotApi.ubtRobotDisconnect("SDK","1",gIPAddr)

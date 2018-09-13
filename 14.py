@@ -1,5 +1,5 @@
 #! /usr/local/bin/python
-
+# _*_ coding: utf-8 -*-
 import argparse
 from subprocess import call
 import time

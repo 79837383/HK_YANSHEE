@@ -1,0 +1,57 @@
+Language model created by QuickLM on Mon Sep 10 03:46:59 EDT 2018
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 8 sentences and 10 words
+
+\data\
+ngram 1=10
+ngram 2=16
+ngram 3=8
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.6812 ALTERNATIVELY -0.2218
+-1.6812 APPLICATION -0.2218
+-1.6812 CONFIGURATION -0.2218
+-1.6812 DEPENDING -0.2218
+-1.6812 INFORMATION -0.2218
+-1.6812 LANGUAGE -0.2218
+-1.6812 PARAMTERS -0.2218
+-1.6812 RESOURCES -0.2218
+
+\2-grams:
+-1.2041 <s> ALTERNATIVELY 0.0000
+-1.2041 <s> APPLICATION 0.0000
+-1.2041 <s> CONFIGURATION 0.0000
+-1.2041 <s> DEPENDING 0.0000
+-1.2041 <s> INFORMATION 0.0000
+-1.2041 <s> LANGUAGE 0.0000
+-1.2041 <s> PARAMTERS 0.0000
+-1.2041 <s> RESOURCES 0.0000
+-0.3010 ALTERNATIVELY </s> -0.3010
+-0.3010 APPLICATION </s> -0.3010
+-0.3010 CONFIGURATION </s> -0.3010
+-0.3010 DEPENDING </s> -0.3010
+-0.3010 INFORMATION </s> -0.3010
+-0.3010 LANGUAGE </s> -0.3010
+-0.3010 PARAMTERS </s> -0.3010
+-0.3010 RESOURCES </s> -0.3010
+
+\3-grams:
+-0.3010 <s> ALTERNATIVELY </s>
+-0.3010 <s> APPLICATION </s>
+-0.3010 <s> CONFIGURATION </s>
+-0.3010 <s> DEPENDING </s>
+-0.3010 <s> INFORMATION </s>
+-0.3010 <s> LANGUAGE </s>
+-0.3010 <s> PARAMTERS </s>
+-0.3010 <s> RESOURCES </s>
+
+\end\

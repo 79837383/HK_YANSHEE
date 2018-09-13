@@ -1,3 +1,13 @@
 *.pyc
 *.jpg
 *.wav
+/13/sphinxbase-5prealpha/
+/13/pocketsphinx-5prealpha/
+/13/sphinxbase-5prealpha.tar.gz
+/13/pocketsphinx-5prealpha.tar.gz
+/15/*.jpg
+/17/att_faces/
+/17/att_faces.zip
+/9/*.jpg
+/4/ZLK38AVS/
+/4/ZLK38AVS.zip

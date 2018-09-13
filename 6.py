@@ -20,6 +20,10 @@ ret=RobotApi.ubtRobotConnect("SDK","1",gIPAddr)
 if(0!=ret):
 		print("Can not connect to robot %s"%robotinfo.acName) 
 		exit(1)
+
+res = RobotApi.ubtSearchExtendSensor()
+print res
+
 #---------------------------Read Sensor Value--------------------------
 ultrasonic_sensor=RobotApi.UBTEDU_ROBOTULTRASONIC_SENSOR_T() 
 while True:

@@ -1,3 +1,4 @@
+# _*_ coding: utf-8 -*-
 import time
 import picamera
 

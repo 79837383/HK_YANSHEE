@@ -21,7 +21,7 @@ counter = 0
 
 
 # Load the cascade files for detecting faces
-face_cascade = cv2.CascadeClassifier("/home/pi/data/haarcascades/haarcascadefrontalface.xml")
+face_cascade = cv2.CascadeClassifier("./haarcascade_frontalface_default.xml")
 
 
 # Capture frames from camera
